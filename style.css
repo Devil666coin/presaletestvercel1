@@ -1,31 +1,62 @@
 
 body {
-    background-color: #000;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 20px;
+  background-color: #0d0d0d;
+  color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 40px 20px;
 }
-button {
-    background: red;
-    color: white;
-    padding: 10px 20px;
-    margin: 10px;
-    border: 1px solid #fff;
-    cursor: pointer;
+.container {
+  max-width: 600px;
+  margin: auto;
 }
-#walletOptions button {
-    display: block;
-    margin: 10px auto;
+.connect-button {
+  background-color: red;
+  border: none;
+  padding: 12px 25px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 10px;
 }
-#progress {
-    width: 100%;
-    background: #333;
-    height: 20px;
-    margin-top: 20px;
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 15px 0;
 }
-#progressBar {
-    width: 0;
-    height: 100%;
-    background: red;
+.wallet-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #1a1a1a;
+  border: 1px solid red;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+}
+.wallet-icon {
+  height: 24px;
+}
+.hidden {
+  display: none;
+}
+.progress-bar {
+  height: 16px;
+  width: 100%;
+  background-color: #333;
+  border-radius: 8px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background-color: red;
+  transition: width 0.5s;
+}
+#countdown {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
