@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>$666 – The Unholy Presale</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>$666 – The Unholy Presale</h1>
+        <div id="countdown">06 : 06 : 06 : 06</div>
+        <button id="connectWallet">Connect Wallet</button>
+        <div class="dropdown" id="walletOptions" style="display:none;">
+            <button class="wallet-btn" onclick="connectMetaMask()">MetaMask</button>
+            <button class="wallet-btn" onclick="connectTrustWallet()">Trust Wallet</button>
+            <button class="wallet-btn" onclick="connectWalletConnect()">WalletConnect</button>
+        </div>
+        <div id="progress">
+            <div id="progressBar"></div>
+        </div>
+        <p>Presale Progress: <span id="bnbAmount">0</span> BNB / 50 BNB (Soft cap: 10 BNB)</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
