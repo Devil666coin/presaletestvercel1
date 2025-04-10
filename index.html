@@ -1,36 +1,33 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>$666 – The Unholy Presale</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@walletconnect/web3-provider@1.8.0/dist/umd/index.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>$666 – The Unholy Presale (TESTNET)</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>$666 – The Unholy Presale</h1>
-    <div id="countdown">06 : 06 : 06 : 06</div>
-    <button id="connectBtn" class="connect-button">Connect Wallet</button>
-    <div id="walletOptions" class="dropdown hidden">
-      <button class="wallet-option" onclick="connectMetaMask()">
-        <img src="https://raw.githubusercontent.com/MetaMask/brand-resources/master/SVG/metamask-fox.svg" class="wallet-icon"> MetaMask
-      </button>
-      <button class="wallet-option" onclick="connectTrustWallet()">
-        <img src="https://trustwallet.com/assets/images/media/assets/TWT.png" class="wallet-icon"> Trust Wallet
-      </button>
-      <button class="wallet-option" onclick="connectWalletConnect()">
-        <img src="https://avatars.githubusercontent.com/u/37784886?s=200&v=4" class="wallet-icon"> WalletConnect
-      </button>
+    <div class="container">
+        <h1>$666 – The Unholy Presale</h1>
+        <div id="countdown">06 : 06 : 06 : 06</div>
+        <button id="connect-btn">Connect Wallet</button>
+        <div id="wallet-options" class="hidden">
+            <button class="wallet-button" id="metamask-btn">
+                <img src="https://raw.githubusercontent.com/MetaMask/brand-resources/master/SVG/metamask-fox.svg" alt="MetaMask" class="icon"/> MetaMask
+            </button>
+            <button class="wallet-button" id="trustwallet-btn">
+                <img src="https://trustwallet.com/assets/images/media/assets/TWT.png" alt="Trust Wallet" class="icon"/> Trust Wallet
+            </button>
+            <button class="wallet-button" id="walletconnect-btn">
+                <img src="https://avatars.githubusercontent.com/u/37784886?s=200&v=4" alt="WalletConnect" class="icon"/> WalletConnect
+            </button>
+        </div>
+        <div class="progress">
+            <div id="progress-bar"></div>
+        </div>
+        <p id="progress-text">Presale Progress: 0 BNB / 50 BNB (Soft cap: 10 BNB)</p>
     </div>
-    <div id="walletAddress"></div>
-    <div class="progress-bar">
-      <div id="progressFill" class="progress-fill"></div>
-    </div>
-    <p id="presaleInfo">Presale Progress: 0 BNB / 50 BNB (Soft cap: 10 BNB)</p>
-    <p id="tokenInfo"></p>
-  </div>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
